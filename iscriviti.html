@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MuMa</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e4d67f3e9a.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body class="container-fluid" id="bodyPaginaLogin">
+        <header class="header-container">
+            <img src="imgs/logo.png" alt="logo superiore di MuMa" id="logosuperiore">
+            <nav>
+                <ul id="nav-container">
+                    <li><a class="active nounderline" href="index.html"><b>HOME</b></a></li>
+                    <li><a class="active nounderline" href="download.html"><b>LOG IN</b></a></li>
+                    <li><a class="whitelink nounderline" href="about.html"><b>CHI SIAMO</b></a></li>
+                    <li><a class="whitelink nounderline" href="assistenza.html"><b>ASSISTENZA</b></a></li>
+                    <li><a class="whitelink nounderline" href="documentazione.html"><b>DOCUMENTAZIONE</b></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="login-container">
+            <div class="login-content">
+            <div class="login-image-container">
+            <img src="imgs/login.png" alt="due schermate dell'app" class="login-image">
+        </div>
+
+       <div class="login-form">
+            <h2>Iscriviti</h2>
+            <form action="login.php" method="post">
+                <label for="username">Numero di cellulare o indirizzo e-mail:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password"> Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" id="accedi">Avanti</button>
+            </form>
+            <p id="nonhai"> Hai un account? <br> <a href="download.html" id="iscrivitilink">  Accedi</a></p>
+        </div>
+    </div>
+</div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="col-sm-4">
+                  <p>©2023 property of 'MuMa'</p>
+                  <br>
+                  <p><a href="crediti.html" style="text-decoration: none; color: inherit;" id="footercol">Crediti</a>
+                </div>
+                <div class="col-sm-4">
+                    <p>Contatti: <br> <a href="assistenza.html" style="text-decoration: none; color: inherit;" id="footercol">Assistenza</a> <br> Instagram </p>
+                </div>
+                <div class="col-sm-4">
+                    <p><a href="index.html" style="text-decoration: none; color: inherit;" id="menu1">HOME</a> <br> 
+                       <a href="download.html" style="text-decoration: none; color: inherit;" id="menu2">LOG IN</a> <br>
+                       <a href="about.html" style="text-decoration: none; color: inherit;" id="menu3">CHI SIAMO</a> <br>
+                       <a href="assistenza.html" style="text-decoration: none; color: inherit;" id="menu4">ASSISTENZA</a> <br>
+                       <a href="documentazione.html" style="text-decoration: none; color: inherit;" id="menu5">DOCUMENTAZIONE</a> <br>
+                  </div>
+              </div>
+            </div>
+        </div>
+          </footer>
+        
+        </div>
+        </div>
+        
+    </body>
+</html>

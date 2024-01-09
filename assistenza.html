@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MuMa</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e4d67f3e9a.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script>
+                  
+          function redirectOnSmallScreens() {
+              if (window.innerWidth <= 768) {
+                  window.location.href = "pagina_alternativa.html"; 
+              }
+          }
+  
+          redirectOnSmallScreens();
+  
+          window.addEventListener("resize", redirectOnSmallScreens);
+      </script>
+    </head>
+
+    <body class="container-fluid">
+        <header class="header-container">
+            <img src="imgs/logo.png" alt="logo superiore di MuMa" id="logosuperiore">
+            <nav>
+                <ul id="nav-container">
+                    <li><a class="whitelink nounderline" href="index.html"><b>HOME</b></a></li>
+                    <li><a class="whitelink nounderline" href="download.html"><b>LOG IN</b></a></li>
+                    <li><a class="whitelink nounderline" href="about.html"><b>CHI SIAMO</b></a></li>
+                    <li><a class="active nounderline" href="assistenza.html"><b>ASSISTENZA</b></a></li>
+                    <li><a class="whitelink nounderline" href="documentazione.html"><b>DOCUMENTAZIONE</b></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="header-container d-flex justify-content-center align-items-center" id="sectionassistenza">
+          <img id="grid_1" class="img_banner" src="imgs/assistenza1.png" alt="Domande frequenti">
+        <main id="mainassistenza">
+      
+          <div class="faq-question" id="faq1" onclick="toggleAnswer('question1')">
+            <strong>Come posso creare un account?</strong>
+            <div class="faq-answer" id="question1">
+              Per creare un account MuMa, vai alla pagina <a href="iscriviti.html" style="text-decoration: underline; color: inherit;"> Iscriviti</a> e segui le istruzioni.
+            </div>
+          </div>
+      
+          <div class="faq-question" onclick="toggleAnswer('question2')">
+            <strong>Posso creare più account MuMa?</strong>
+            <div class="faq-answer" id="question2">
+            Ogni e-mail può essere collegata solo ad un account. Per creare un secondo account è quindi necessario avere una mail diversa dalla prima. 
+            </div>
+          </div>
+      
+          <div class="faq-question" onclick="toggleAnswer('question3')">
+            <strong>Posso utilizzare MuMa offline?</strong>
+            <div class="faq-answer" id="question3">
+              MuMa funziona offline ma con delle limitazioni. Potrai visualizzare il profilo e i post degli utenti già visualizzati, ma non vedrai i loro nuovi contenuti finché non ritornerai online. 
+            </div>
+          </div>
+
+          <div class="faq-question" onclick="toggleAnswer('question4')">
+            <strong>Desidero che i miei post non siano pubblici. </strong>
+            <div class="faq-answer" id="question4">
+              Puoi moderare la visibilità di ogni tuo post nelle impostazioni del tuo profilo. Puoi decidere di rendere il tuo contenuto pubblico, cioè visibile a tutti; privato, quindi visibile solo a chi ti segue; o segreto e dunque visualizzabile solo da te. 
+            </div>
+          </div>
+
+          <div class="faq-question" onclick="toggleAnswer('question5')">
+            <strong>Perché mi è stato bloccato l’account?</strong>
+            <div class="faq-answer" id="question5">
+              Se il tuo account risulta bloccato, ti chiediamo di controllare la tua casella di posta per sapere la motivazione del blocco. 
+            Blocchiamo gli account che violano il nostro regolamento e che minacciano la serenità della community e dei suoi utenti. <br>
+            Se ritieni ci sia stato un errore, puoi contestare il blocco all’assistenza, che dopo le opportune verifiche, provvederà a riattivare il tuo account immediatamente. 
+            </div>
+          </div>
+
+          <div class="faq-question" onclick="toggleAnswer('question6')">
+            <strong>Sto subendo atti di cyberbullismo su MuMa.</strong>
+            <div class="faq-answer" id="question6">
+              Non avere paura di chiedere aiuto, se sei vittima di bullismo o cyberbullismo contatta il numero verde istituito dal MUR <a href="https://archivio.pubblica.istruzione.it/ministro/comunicati/2007/050207.shtml" style="text-decoration: underline; color: inherit;"> qui. </a> <br> <br>
+              Se sei vittima di atti di cyberbullismo su MuMa, ti consigliamo due strade. 
+              La prima consiste nel limitare l’account dell’aggressore, che potrà continuare a vedere il tuo profilo, commentare e mandarti messaggi privati che però non ti arriveranno mai. In questo caso per l’utente limitato non ci saranno apparenti differenze e non saprà delle limitazioni. Questa opzione potrebbe essere utile nel caso conoscessi questa persona nella vita reale, e avessi paura di ripercussioni violente nel caso lo bloccassi. <br>
+              Se invece desideri che questo utente non possa vedere il tuo profilo e le tue attività ti consigliamo di bloccarlo. <br>
+              In ogni caso ti preghiamo di contattare l’assistenza MuMa che ti fornirà sostegno e si occuperà di aiutarti a gestire il problema. 
+            </div>
+          </div>
+        
+        <script>
+          function toggleAnswer(questionId) {
+            var answer = document.getElementById(questionId);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+              answer.style.display = 'block';
+            } else {
+              answer.style.display = 'none';
+            }
+          }
+
+        </script>
+  </main>
+  </section>
+
+<section id="redirectMessage" style="text-align: center; padding: 20px;">
+    <p>Questa pagina è ottimizzata per schermi più grandi. Verrai reindirizzato a una versione alternativa.</p>
+</section>
+
+<section>
+        <div class="container d-flex justify-content-center align-items-center">
+          <img id="grid_2" class="img_banner" src="imgs/assistenza2.png" alt="Contatta l'assistenza">
+            <div class="col-md-8 order-md-1">
+              <h2><a href="download.html" style="text-decoration: underline; color: inherit;">Accedi</a> per un'assistenza più rapida </h2>
+              <h3>oppure:</h3>
+                
+              <form class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">Nome</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Cognome</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  </div>
+                </div>
+        
+               <div class="mb-3">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                </div> 
+        
+                <div class="mb-3">
+                  <label for="address">Spiegaci il problema</label>
+                  <input type="text" class="form-control" id="address" placeholder="..." required>
+                </div>
+              </form>
+            </div>
+        </section>
+        
+        <section>
+        <button class="contactsbutton btn btn-secondary btn-lg" type="button" >Invia</button>
+        </section>
+
+        <footer class="footer">
+         <div class="container-fluid">
+         <div class="row">
+         <div class="col-sm-4">
+           <p>©2023 property of 'MuMa'</p>
+           <br>
+           <p><a href="crediti.html" style="text-decoration: none; color: inherit;" id="footercol">Crediti</a>
+         </div>
+         <div class="col-sm-4">
+          <p>Contatti: <br> <a href="assistenza.html" style="text-decoration: none; color: inherit;" id="footercol">Assistenza</a> <br> Instagram </p>
+         </div>
+         <div class="col-sm-4">
+          <p><a href="index.html" style="text-decoration: none; color: inherit;" id="menu1">HOME</a> <br> 
+              <a href="download.html" style="text-decoration: none; color: inherit;" id="menu2">LOG IN</a> <br>
+              <a href="about.html" style="text-decoration: none; color: inherit;" id="menu3">CHI SIAMO</a> <br>
+              <a href="assistenza.html" style="text-decoration: none; color: inherit;" id="menu4">ASSISTENZA</a> <br>
+               <a href="documentazione.html" style="text-decoration: none; color: inherit;" id="menu5">DOCUMENTAZIONE</a> <br>
+         </div>
+         </div>
+         </div>
+         </div>
+         </footer>
+                </div>
+                </div>
+            
+            </body>
+        </html>
